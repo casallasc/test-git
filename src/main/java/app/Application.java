@@ -19,5 +19,6 @@ public class Application {
 
         team.initFakePlayers();
         team.print();
+        team.getPlayers().get(0).intro();
     }
 }
