@@ -11,9 +11,9 @@ public class Team {
     private String name;
     private List<Player> players;
 
-    public void printPlayers() {
-        this.players.stream()
-                .map(Player::getName)
-                .forEach(System.out::println);
+    public void print() {
+        System.out.println("Team: " + this.name + "\n");
+        this.players
+                .forEach(Player::sayHello);
     }
 }
