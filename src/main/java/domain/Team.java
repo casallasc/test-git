@@ -26,6 +26,7 @@ public class Team {
                 .mapToObj(index ->  Player.builder()
                         .name(faker.name().firstName())
                         .number(index+1)
+                        .team(this)
                         .build())
                 .collect(Collectors.toList());
     }
