@@ -7,10 +7,10 @@ public class Application {
     public static void main(String[] args) {
 
         Application app = new Application();
-        app.init();
+        app.run();
     }
 
-    public void init() {
+    public void run() {
         Faker faker = new Faker();
 
         Team team = Team.builder()
