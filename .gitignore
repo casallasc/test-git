@@ -10,3 +10,4 @@ target/
 
 # Project exclude paths
 /.gradle/
+/out/
