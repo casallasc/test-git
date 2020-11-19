@@ -9,7 +9,7 @@ public class Player {
     private String name;
     private Integer number;
 
-    public void sayHello() {
-        System.out.println("Hello, my name is " + this.name );
+    public void print() {
+        System.out.println("Player " + this.number + ": " + this.name );
     }
 }
