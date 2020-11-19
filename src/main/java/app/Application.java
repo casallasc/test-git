@@ -30,6 +30,6 @@ public class Application {
                 .name(faker.team().name())
                 .build();
 
-        team.printPlayers();
+        team.print();
     }
 }
