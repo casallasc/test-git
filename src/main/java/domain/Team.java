@@ -14,6 +14,6 @@ public class Team {
     public void print() {
         System.out.println("Team: " + this.name + "\n");
         this.players
-                .forEach(Player::sayHello);
+                .forEach(Player::print);
     }
 }
