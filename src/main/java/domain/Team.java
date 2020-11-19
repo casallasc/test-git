@@ -12,6 +12,7 @@ public class Team {
     private List<Player> players;
 
     public void print() {
+        System.out.println("Team: " + this.name + "\n");
         this.players
                 .forEach(Player::sayHello);
     }
