@@ -5,12 +5,16 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Getter
 @Builder
 public class Team {
+    final int MAX = 10;
+    final int MIN = 1;
+
     private String name;
     private List<Player> players;
 
@@ -29,5 +33,10 @@ public class Team {
                         .team(this)
                         .build())
                 .collect(Collectors.toList());
+    }
+
+    public void introRandomPlayer() {
+        Random random = new Random();
+        this.players.get(random.nextInt(MAX - MIN + 1) + MIN).intro();
     }
 }
