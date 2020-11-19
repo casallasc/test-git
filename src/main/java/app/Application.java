@@ -3,11 +3,7 @@ package app;
 import com.github.javafaker.Faker;
 import domain.Team;
 
-import java.util.Random;
-
 public class Application {
-    final int MAX = 10;
-    final int MIN = 1;
 
     public static void main(String[] args) {
 
@@ -24,7 +20,6 @@ public class Application {
 
         team.initFakePlayers();
         team.print();
-        Random random = new Random();
-        team.getPlayers().get(random.nextInt(MAX - MIN + 1) + MIN).intro();
+        team.introRandomPlayer();
     }
 }
