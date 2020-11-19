@@ -15,6 +15,6 @@ public class Player {
     }
 
     public void intro() {
-        System.out.println("My name is " + this.name + ", my team is " + this.team.getName() + "!");
+        System.out.println("\nMy name is " + this.name + ", my team is " + this.team.getName() + "!");
     }
 }
